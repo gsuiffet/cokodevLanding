@@ -10,6 +10,8 @@
   "author": "Guillaume Suiffet",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.1"
+    "ejs": "^2.5.7",
+    "express": "^4.16.1",
+    "node-trello": "^1.3.0"
   }
 }

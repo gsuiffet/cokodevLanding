@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
     <meta charset="utf-8">
     <title>CoKoDev</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,35 +9,247 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="shortcut icon" href="images/favicon.ico">
-
     <!-- CSS -->
     <link href="css/reset.css" rel="stylesheet" type="text/css" />
     <link href="css/mui.min.css" rel="stylesheet" type="text/css" />
     <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" />
     <link href="css/style.css" rel="stylesheet" type="text/css" />
-    <!-- FONTS -->
+    <!-- JS -->
     <script src="js/jquery.min.js" type="text/javascript"></script>
     <script src="js/mui.min.js" type="text/javascript"></script>
     <script src="js/myscript.js" type="text/javascript"></script>
+    <script src="js/scroll.js" type="text/javascript"></script>
 
 </head>
 <body>
-    <h1>Template</h1>
-
+<header class="mui-appbar mui--z1">
+    <div class="mui-container">
+        <table width="100%">
+            <tr class="mui--appbar-height">
+                <td id="logo" class="mui--text-title"><a href="/"><strong>CoKoDev</strong></a></td>
+                <td align="right">
+                    <ul class="mui-list--inline mui--text-body2">
+                        <li><a href="/#home">Home</a></li>
+                        <li><a href="/#features">Features</a></li>
+                        <li><a href="/#product">Product</a></li>
+                        <li><a href="/#team">Team</a></li>
+                        <li><a href="/#contact">Contact</a></li>
+                        <li><a href="/#acceder"><button class="mui-btn mui-btn--primary">Accéder</button></a></li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+    </div>
+</header>
+<div id="home" class="side">
+    <div id="content-wrapper" class="mui--text-center">
+        <div class="mui--appbar-height"></div>
+        <div class="mui-container-fluid">
+            <div class="mui-row">
+                <div class="mui-col-xs-12 mui-col-md-4">
+                    <br>
+                    <br>
+                    <div class="mui--text-display3">cokodev.com</div>
+                    <p class="mui--text-center">
+                        Collaborative Code Development
+                    </p>
+                    <br>
+                    <br>
+                    <p>
+                        The easiest way to collaborate on code snippets for developers and their friends.
+                    </p>
+                    <br>
+                    <br>
+                    <button class="mui-btn mui-btn--primary">Accéder</button>
+                </div>
+                <div class="mui-col-xs-12 mui-col-md-8 imagePresentation">
+                    <img src="images/homescreen.jpg" alt="screen Cokodev dashboard" />
+                    <!--
+                    Container is centered on page with 15px of
+                    padding on either side. The inner width is
+                    fluid for small viewports and has a max
+                    width for larger dimensions:
+                    * 570px (≥ 544px)
+                    * 740px (≥ 768px)
+                    * 960px (≥ 992px)
+                    * 1170px (≥ 1200px)
+                    -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="features" class="side">
+    <div class="mui--appbar-height"></div>
+    <br>
+    <br>
+    <div class="mui--text-center"><h2>Sharing snippets</h2></div>
+    <div class="mui--text-center">
+        <p>
+        Resources that you understand
+        </p>
+    </div>
     <div class="mui-container-fluid">
         <div class="mui-row">
-
+            <div class="mui-col-xs-12 mui-col-md-4">
+                <div class="mui--text-center">
+                    <img class="icon" src="images/dashboard.png" alt="icon dashboard" />
+                    <h3>DASHBOARD</h3>
+                    <p>
+                        Manage and keep organized your code snippets that works.
+                    </p>
+                </div>
+            </div>
+            <div class="mui-col-xs-12 mui-col-md-4">
+                <div class="mui--text-center">
+                    <img class="icon" src="images/friends.png" alt="icon friends" />
+                    <h3>FRIENDS</h3>
+                    <p>
+                        Get the code snippets of your friends to faster develop your projects.
+                    </p>
+                </div>
+            </div>
+            <div class="mui-col-xs-12 mui-col-md-4">
+                <div class="mui--text-center">
+                    <img class="iconfuser" src="images/fuser.png" alt="icon collaborate" />
+                    <h3>COLLABORATE</h3>
+                    <p>
+                        Ask for advice to understand the logic and be notified when friends reply.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="product" class="side">
+    <div class="mui--appbar-height"></div>
+    <div class="mui-container">
+        <div class="mui-row">
+            <div id="slider">
+                <a href="/#product" class="control_next"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                <a href="/#product" class="control_prev"><i class="fa fa-arrow-left" aria-hidden="true"></i></a>
+                <ul>
+                    <li style="background: #aaa;"><img src="images/sharedscreen.jpg" alt="" />
+                        <div class="slide_dec">
+                            <h4>Shared</h4>
+                            <p>Find what you need from friends.</p>
+                        </div>
+                    </li>
+                    <li style="background: #aaa;"><img src="images/messagescreen.jpg" alt="" />
+                        <div class="slide_dec">
+                            <h4>Friends</h4>
+                            <p>Collaborate between friends developers.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="images/homescreen.jpg" alt="" />
+                        <div class="slide_dec">
+                            <h4 >Dasboard</h4>
+                            <p>
+                                Manage your code snippets.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 
+</div>
+<div id="team" class="side">
+    <br>
+    <br>
+    <div class="mui--text-center"><h2>Team</h2></div>
+    <div class="mui--text-center">
+    </div>
+    <div class="mui-container-fluid">
+        <div class="mui-row">
+            <div class="mui-col-xs-12 mui-col-md-3">
+                <div class="mui--text-center pic">
+                    <div class="picture"></div>
+                    <h4><strong>Gaspard Lehembreg</strong></h4>
+                    <p>
+                        Developer
+                    </p>
+                    <!--img class="icon" src="images/dashboard.png" alt="icon dashboard" /-->
+                </div>
+            </div>
+            <div class="mui-col-xs-12 mui-col-md-3">
+                <div class="mui--text-center pic">
+                    <!--img class="icon" src="images/friends.png" alt="icon friends" /-->
+                    <div class="picture"></div>
+                    <h4><strong>Guillaume Suiffet</strong></h4>
+                        <p>
+                            Developer
+                        </p>
+                </div>
+            </div>
+            <div class="mui-col-xs-12 mui-col-md-3">
+                <div class="mui--text-center pic">
+                    <!--img class="iconfuser" src="images/fuser.png" alt="icon collaborate" /-->
+                    <div class="picture"></div>
+                    <h4><strong>Olivia Tastet</strong></h4>
+                        <p>
+                            Developer
+                        </p>
+                </div>
+            </div>
+            <div class="mui-col-xs-12 mui-col-md-3">
+                <div class="mui--text-center pic">
+                    <!--img class="iconfuser" src="images/fuser.png" alt="icon collaborate" /-->
+                    <div class="picture"></div>
+                    <h4><strong>Bertha Munoz</strong></h4>
+                        <p>
+                            Developer
+                        </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="contact">
+    <div class="mui--appbar-height"></div>
+    <br>
+    <br>
+    <div class="mui--text-center"><h2>Contact us</h2></div>
+    <div class="mui-container-fluid">
+        <div class="mui-row">
+            <div class="contact">
+                <form class="mui-form" action="/contact" method="POST">
+                    <div class="mui-textfield">
+                        <input type="text" name="name" class="name">
+                        <label>Name</label>
+                    </div>
+                    <div class="mui-textfield">
+                        <input type="text" name="email" class="email">
+                        <label>Email</label>
+                    </div>
+                    <div class="mui-textfield">
+                        <textarea name="message" class="message"></textarea>
+                        <label>Message</label>
+                    </div>
+                    <button type="submit" class="mui-btn mui-btn--raised" >Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<footer>
 
-
-
-
-
-
-
-
+    <div class="mui-container-fluid">
+        <div class="mui-row">
+            <h4 class="mui--text-center">Spread the word</h4>
+            <span class="share">
+            <p class="mui--text-center"><i class="fa fa-facebook-official mui--text-center" aria-hidden="true"></i>   <i class="fa fa-linkedin-square mui--text-center" aria-hidden="true"></i></p>
+            </span>
+        </div>
+    </div>
+    <div class="mui-container mui--text-center">
+        <p>Made with ♥ by <a href="/">COKODEV</a></p>
+        <span class="end"><p>Copyright 2017</p></span>
+    </div>
+</footer>
+</body>
 
     <!-- Analytics -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
