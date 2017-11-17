@@ -2,7 +2,7 @@ var express = require('express');
 var app = express();
 app.set('view engine', 'ejs');
 var Trello = require("node-trello");
-var t = new Trello("", "");
+var t = new Trello("YYYY-MM-DDTHH:MM:SSZ", "YYYY-MM-DDTHH:MM:SSZ");
 
 
 app.use(express.static('public'));
@@ -24,7 +24,7 @@ app.post('/contact', function (req, res) {
     console.log(req.body.message);
 // URL arguments are passed in as an object.
     //t.post("/1/members/me", { cards: "open" }, function(err, data) {
-    t.post("/1/cards", { idList: "", name:req.body.name + " " +  req.body.email, desc: req.body.message}, function(err, data) {
+    t.post("/1/cards", { idList: "YYYY-MM-DDTHH:MM:SSZ", name:req.body.name + " " +  req.body.email, desc: req.body.message}, function(err, data) {
         if (err) throw err;
         console.log(data);
     });
