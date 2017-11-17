@@ -32,6 +32,6 @@ app.post('/contact', function (req, res) {
     res.render('contact');
 });
 
-app.listen(80, function () {
+app.listen(8080, function () {
     console.log("Server listening on port 8080");
 });
