@@ -2,7 +2,8 @@ var express = require('express');
 var app = express();
 app.set('view engine', 'ejs');
 var Trello = require("node-trello");
-var t = new Trello("674dce23795a54b9be3a090108a9ea45", "6ca9f47861320267f23f1406b36726fd4d6f76df584b946a5fa33a0ad1bbea89");
+var t = new Trello("", "");
+
 app.use(express.static('public'));
 
 var bodyParser = require('body-parser')
@@ -22,7 +23,7 @@ app.post('/contact', function (req, res) {
     console.log(req.body.message);
 // URL arguments are passed in as an object.
     //t.post("/1/members/me", { cards: "open" }, function(err, data) {
-    t.post("/1/cards", { idList: "59da6052f1efec82449f108a", name:req.body.name + " " +  req.body.email, desc: req.body.message}, function(err, data) {
+    t.post("/1/cards", { idList: "", name:req.body.name + " " +  req.body.email, desc: req.body.message}, function(err, data) {
         if (err) throw err;
         console.log(data);
     });
@@ -30,6 +31,6 @@ app.post('/contact', function (req, res) {
     res.render('contact');
 });
 
-app.listen(8080, function () {
+app.listen(80, function () {
     console.log("Server listening on port 8080");
 });
